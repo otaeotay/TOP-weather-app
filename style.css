@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+
+/*CSS RESET 
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS */
+
+:root{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#logo{
+  font-family: 'Libre Barcode 128 Text', cursive;
+  position: absolute;
+  font-size: max(3vw, 3vh);
+  left: max(2vw, 3vh);
+  top: max(1vw, 3vh);
+}
+
+#input-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+#city-input{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  width: 50vw;
+  height: 5vh;
+  text-align: center;
+  border: none;
+}
+
+#overview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+#city{
+  font-size: 4vw;
+}
+
+#temperature{
+  font-size: 8vw;
+}
+
+#sky{
+  font-size: 4vw;
+}
+
+#svg{
+  width: 5vw;
+  height: 5vw;
+}
+
+.svg-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+  
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+#buttons{
+  position: absolute;
+  bottom: max(2vw, 2vh);
+  right: max(2vw, 2vh);
+}
+
+.units{
+  font-family: 'Times New Roman', Times, serif;
+  border: max(0.25vw, 0.25vh) solid black;
+  border-radius: 25%;
+  font-size: max(3vw, 3vh);
+  width: max(5vw, 5vh);
+  height: max(5vw, 5vh);
+}

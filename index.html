@@ -5,13 +5,24 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
     <title>Document</title>
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>
+    <div id='logo'>justlookoutside</div>
+    <div id='input-container'>
+        <input id='city-input' type='text' placeholder='search location'/>
+    </div>
     <div id='overview'>
         <div id='city'></div>
         <div id='temperature'></div>
         <div id='sky'></div>
+        <div id='svg'></svg>
     </div>
+
+    <div id='buttons'>
+        <button class='units'>°C</button>
+        <button class='units'>°F</button>
+    </div>    
     
     <script src='app.js'></script>
 </body>
