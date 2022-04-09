@@ -51,6 +51,7 @@ function getCity(){
 
 
 async function getWeather() {
+    // Current weather
     const city = getCity();
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=${units}`, {mode: 'cors'});
     const weatherData = await response.json();
@@ -66,6 +67,13 @@ async function getWeather() {
     skyDiv.textContent = weatherObj.condition;
     let dood = getIcon(weatherObj.code);
     weatherSvg.innerHTML = dood;
+
+    // Forecast
+    // const lat = weatherData.coord.lat;
+    // const long = weatherData.coord.lon;
+    // const test = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=hourly,minutely,alerts&units=${units}&appid=${key}`);
+    // const weather = await test.json();
+    // console.log(weather);
 }
 
 getWeather();

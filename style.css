@@ -54,6 +54,8 @@ table {
 
 :root{
   font-family: 'Times New Roman', Times, serif;
+  --bg-color: rgb(237, 253, 253);
+  background-color: var(--bg-color);
 }
 
 #logo{
@@ -69,15 +71,23 @@ table {
   align-items: center;
   justify-content: center;
   height: 10vh;
+  margin-top: 1vh;
+}
+
+@media (max-width: 800px){
+  #input-container{
+    margin-top: 8vh;
+  }
 }
 
 #city-input{
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2vw;
+  font-size: max(3vw, 3vh);
   width: 50vw;
   height: 5vh;
   text-align: center;
   border: none;
+  background-color: var(--bg-color);
 }
 
 #overview{
@@ -85,24 +95,25 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 80vh;
+  height: 75vh;
+  /* height: min(150vw, 80vh); */
 }
 
 #city{
-  font-size: 4vw;
+  font-size: max(4vw, 6vh);
 }
 
 #temperature{
-  font-size: 8vw;
+  font-size: max(8vw, 12vh);
 }
 
 #sky{
-  font-size: 4vw;
+  font-size: max(4vw, 6vh);
 }
 
 #svg{
-  width: 5vw;
-  height: 5vw;
+  width: max(10vh, 5vw);
+  height: max(10vh, 5vw);
 }
 
 .svg-icon {
@@ -134,4 +145,5 @@ table {
   font-size: max(3vw, 3vh);
   width: max(5vw, 5vh);
   height: max(5vw, 5vh);
+  background-color: var(--bg-color);
 }
